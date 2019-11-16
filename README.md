@@ -1,3 +1,8 @@
+## Run Server 
+the file server.json is our api for test.
+you can run:
+### `json-server server.json -p 3333 -w`
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
