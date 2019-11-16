@@ -1,0 +1,14 @@
+import styled from 'styled-components';
+
+export const ProductList = styled.ul`
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    list-style: none;
+
+    li {
+        display: flex;
+        flex-direction: column;
+        background: #fff, border-box.rad;
+    }
+`;
