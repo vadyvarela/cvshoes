@@ -25,9 +25,11 @@ function Home({ amount, addToCartRequest }) {
         loadProducts();
     }, []);
 
-    function handleAddProduct(id) {
+    handleAddProduct = id => {
+        const { addToCartRequest } = this.props;
+
         addToCartRequest(id);
-    }
+    };
 
     return (
         <ProductList>
@@ -39,7 +41,7 @@ function Home({ amount, addToCartRequest }) {
 
                     <button
                         type="button"
-                        onClick={() => handleAddProduct(product.id)}
+                        onClick={() => this.handleAddProduct(product.id)}
                     >
                         <div>
                             <MdShoppingCart size={16} color="#fff" />{' '}
